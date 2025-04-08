@@ -1,0 +1,191 @@
+/* Algemene stijlen voor de pagina */
+body {
+    background-color: #fafafa;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+nav {
+    background-color: #003366; /* Diepblauw voor de navigatiebalk */
+    padding: 25px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #ffcc00; /* Gele kleur bij hover */
+}
+
+.navbar-brand {
+    color: #ffcc00; /* Geel voor de naam van de rijschool */
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* Hoofdgedeelte - Introductie */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    border-bottom: 4px solid #6c7d3f; /* Olijfgroene border onder de intro-sectie */
+}
+
+.intro h1 {
+    color: #ffcc00;
+    font-size: 2.5rem;
+    max-width: 600px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 550px;
+}
+
+.intro img {
+    width: 1000px;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+    border: 5px solid #7a7a7a;
+}
+
+.diensten {
+    background-color: #ffcc00; 
+    padding: 60px 20px;
+    color: #333;
+}
+
+.diensten h2 {
+    text-align: center;
+    color: #003366; 
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.diensten ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.diensten li {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.diensten li:hover {
+    transform: translateY(-10px);
+    background-color: #6c7d3f; 
+    color: #fff;
+}
+
+.diensten li p {
+    margin: 0;
+}
+
+/* Over ons-sectie */
+.over-ons {
+    padding: 60px 20px;
+    background-color: #003366; /* Diepblauwe achtergrond voor Over ons */
+    color: #fff;
+}
+
+.over-ons h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Gele kleur voor de titel */
+}
+
+.over-ons p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Stijlen voor de team-sectie */
+.team {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+.team h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+.team-member {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Toegevoegd overgang voor achtergrondkleur */
+}
+
+.team-member h3 {
+    font-size: 1.6rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Hover effect met olijfgroen voor de teamleden */
+.team-member:hover {
+    transform: translateY(-10px);
+    background-color: #6c7d3f; /* Olijfgroen bij hover */
+    color: #fff; /* Tekstkleur verandert naar wit bij hover */
+}
+
+/* Flexbox grid voor meerdere teamleden */
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    border-top: 4px solid #ffcc00; /* Gele border bovenaan de footer */
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,320 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    font-size: 18px;
+    color: #333;
+    padding-top: 60px;
+}
+
+.nav {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav .logo {
+    font-size: 36px;
+    font-weight: 700;
+    color: #4C68B1;
+}
+
+.nav .logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav .right-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav .right-links a {
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #4C68B1;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: #eaf4ff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.nav .right-links a:hover {
+    background-color: #4C68B1;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.nav .right-links a:active {
+    transform: translateY(0);
+}
+
+.nav .right-links .logout-btn {
+    background-color: #FF5733;
+    color: white;
+}
+
+.nav .right-links .logout-btn:hover {
+    background-color: #e03e00;
+}
+
+main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 120px;
+    flex-direction: column;
+}
+
+.main-box {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1000px;
+    margin-top: 40px;
+}
+
+.main-box .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.main-box .top .box {
+    background: #eaf4ff;
+    border-radius: 12px;
+    padding: 40px 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-box .top .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.main-box .top .box p {
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.main-box .top .box p b {
+    color: #4C68B1;
+    font-weight: 700;
+}
+
+.main-box .top .box h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #4C68B1;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 840px) {
+    .main-box .top .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.schedule {
+    background: #fff;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.schedule h2 {
+    color: #4C68B1;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+.schedule table th,
+.schedule table td {
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.schedule table th {
+    background-color: #4C68B1;
+    color: #fff;
+}
+
+.schedule table td {
+    background-color: #f9f9f9;
+}
+
+.schedule table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.schedule p {
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.schedule a {
+    color: #4C68B1;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.schedule a:hover {
+    color: #45a049;
+}
+
+.box {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1),
+                0 12px 24px -12px rgba(0, 0, 0, 0.2);
+}
+
+.form-box {
+    width: 450px;
+    margin: 0 30px;
+}
+
+.form-box header {
+    font-size: 32px;
+    font-weight: 700;
+    color: #4C68B1;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f2f2f2;
+    margin-bottom: 30px;
+}
+
+.form-box form .field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-box form .input input {
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    padding: 0 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-box form .input input:focus {
+    border-color: #4C68B1;
+}
+
+.btn {
+    height: 50px;
+    background: #4CAF50;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 25px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.submit {
+    width: 100%;
+}
+
+.links {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.links a {
+    color: #4C68B1;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.message {
+    text-align: center;
+    background: #FFF8E1;
+    padding: 25px;
+    border: 1px solid #FBC02D;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: #F57C00;
+    font-size: 18px;
+}
+
+@media (max-width: 600px) {
+    .form-box {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .form-box header {
+        font-size: 26px;
+    }
+
+    .main-box {
+        width: 90%;
+    }
+
+    .main-box .top .box p {
+        font-size: 18px;
+    }
+
+    .schedule {
+        padding: 20px;
+    }
+
+    .schedule table {
+        font-size: 16px;
+    }
+
+    .schedule p {
+        font-size: 16px;
+    }
+}
